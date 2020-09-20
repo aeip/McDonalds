@@ -1,0 +1,158 @@
+body, html {
+    height: 100%;
+    margin: 0px;
+    font-family: 'Schoolbell', cursive;
+}
+
+.mcbg {
+    background-image: url('img/mcbg.jpg');
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 30px;
+}
+
+.arches {
+    width: 20%;
+    animation: zoomInDown 3s, glow 1s ease-in-out infinite alternate;
+}
+
+nav a {
+    margin: 0px 30px 0px 30px;
+}
+
+.mcbutton {
+    color: rgba(214, 41, 28);
+    text-decoration: none;
+    font-size: 30px;
+    background-color: rgba(255, 199, 44);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.mcbutton:hover {
+    color: rgba(255, 199, 44);
+    background-color: rgba(214, 41, 28);
+}
+@-webkit-keyframes glow {
+    from {
+        -webkit-filter: drop-shadow(0px 12px 7px rgba(255, 199, 44, 0.8));
+     filter: drop-shadow(0px 12px 7px rgba(255, 199, 44, 0.8));
+    }
+    to {
+-webkit-filter: drop-shadow(0px 12px 7px rgba(214, 41, 28, 0.8));
+     filter: drop-shadow(0px 12px 7px rgba(214, 41, 28, 0.8));
+    }
+}
+
+.lovinit {
+    color: white;
+    overflow: hidden;
+    white-space: nowrap;
+    letter-spacing: .1em;
+    animation: typing 4s steps(40, end);
+}
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+.mcnav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.mcnugs {
+    position: relative;
+    width: 100%;
+}
+
+.mcnugs img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.mcnugs .card {
+    background-color: white;
+    width: 30%;
+    padding: 20px;
+    border-radius: 10px;
+    position: absolute;
+    text-align: left;
+    margin: 1rem;
+    bottom: 1rem;
+}
+
+.title a {
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 970px) {
+    .mcnugs .card {
+        position: relative;
+        width: 100%;
+        margin-left: 0px;
+        padding: 0px;
+        height: 320px;
+    }
+    .mcnugs .card a {
+        margin: 10px;
+        
+    }
+    .mcnugs .card h1, .mcnugs .card p {
+        margin: 15px;
+    }
+}
+
+@media only screen and (min-width: 402px) {
+    .mcnugs .card {
+        height: 300px;
+    }
+}
+@media only screen and (min-width: 432px) {
+    .mcnugs .card {
+        height: 250px;
+    }
+}
+@media only screen and (min-width: 539px) {
+    .mcnugs .card {
+        height: 230px;
+    }
+}
+@media only screen and (min-width: 676px) {
+    .mcnugs .card {
+        height: 180px;
+    }
+}
+@media only screen and (min-width: 970px) {
+    .mcnugs .card {
+        height: 320px;
+    }
+}
+
+@media only screen and (min-width: 1125px) {
+    nav {
+        display: block;
+    }
+    .mcburger {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1124px) {
+    nav {
+        display: none;
+    }
+    .mcburger {
+        width: 50px;
+        height: 50px;
+        animation: rollIn 3s;
+    }
+}
+
+
+/* * {
+    border: 1px solid red;
+} */
